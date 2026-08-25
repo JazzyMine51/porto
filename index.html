@@ -16,58 +16,44 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md bg-body-tertiary border">
-            <div class="container">
-                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse align-items-end" id="navbarNav">
-                    <ul class="navbar-nav  mx-auto ">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Vector Art</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Photography</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Web</a>
-                        </li>
-                        <li class="nav-item ms-md-2">
-                            <a class="btn btn-primary" href="#">Contact</a>
-                        </li>
-                    </ul>
+        <nav class="navbar ">
+            <div
+                class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+                <div class="col-md-auto mb-2 mb-md-0">
+                    <a href="./index.html" class="navbar-brand">
+                        <img src="./img/logo.svg" alt="" width="75" height="75">
+                    </a>
                 </div>
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2">Features</a></li>
+                    <li><a href="#" class="nav-link px-2">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2">About</a></li>
+                </ul>
+                <a href="#" class="btn btn-primary col-md-auto">Contact Me</a>
             </div>
         </nav>
     </header>
     <main>
         <!-- hero -->
         <section>
-            <div class="container col-xxl-8 px-4 py-5">
-                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                    <div class="col-10 col-sm-8 col-lg-6"> 
-                        <img src="./img/jasmine.webp"
-                            class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="700" height="500"
-                            loading="lazy"> 
-                        </div>
-                    <div class="col-lg-6">
-                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Jasmine Bélanger</h1>
-                        <p class="lead">Designer, Developer, Photographer, Vector Artist</p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
-                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-                                Contact
-                            </button> 
-                            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-                                Projects
-                            </button> 
+            <div class="container px-5 pb-5">
+                <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-md-5 py-4">
+
+                    <div class="col-12">
+                        <img src="./img/jasmine.webp" class="d-block mx-auto img-fluid rounded-100 border border-5 border-primary"
+                            alt="Bootstrap Themes" width="400" loading="lazy">
+                    </div>
+                    <div class="col-lg-6 border border-5 border-primary rounded-5 p-4">
+                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-center">Jasmine
+                            Bélanger
+                        </h1>
+                        <p class="lead text-center">Designer, Developer, Photographer, Vector Artist</p>
+                        <div class="gap-2 d-flex justify-content-center">
+                            <a class="btn btn-primary btn-lg px-4 me-md-2">
+                                View My Projects
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -81,28 +67,38 @@
                 <div class="row align-items-md-center g-5 py-5">
                     <div class="col-md-6">
                         <h3>A Software Background Expanding to Design.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt debitis nobis unde repellendus atque possimus repellat laudantium non est qui autem, laborum quibusdam commodi accusantium, minima vel natus fugiat deleniti!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt debitis nobis unde
+                            repellendus atque possimus repellat laudantium non est qui autem, laborum quibusdam commodi
+                            accusantium, minima vel natus fugiat deleniti!</p>
                     </div>
                     <div class="col-md-6">
                         <div class="row g-4">
                             <div class="col-6">
                                 <h4>Software Development</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit repellendus sequi earum? Ratione, necessitatibus voluptas aliquid, suscipit unde quas accusamus quod nostrum error nisi eaque pariatur impedit nihil sint voluptatem.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit repellendus sequi
+                                    earum? Ratione, necessitatibus voluptas aliquid, suscipit unde quas accusamus quod
+                                    nostrum error nisi eaque pariatur impedit nihil sint voluptatem.</p>
                                 <a class="btn btn-primary" href="#">Learn More</a>
                             </div>
                             <div class="col-6">
                                 <h4>Web Design / Development</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit repellendus sequi earum? Ratione, necessitatibus voluptas aliquid, suscipit unde quas accusamus quod nostrum error nisi eaque pariatur impedit nihil sint voluptatem.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit repellendus sequi
+                                    earum? Ratione, necessitatibus voluptas aliquid, suscipit unde quas accusamus quod
+                                    nostrum error nisi eaque pariatur impedit nihil sint voluptatem.</p>
                                 <a class="btn btn-primary" href="#">Learn More</a>
                             </div>
                             <div class="col-6">
                                 <h4>Vector Art</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit repellendus sequi earum? Ratione, necessitatibus voluptas aliquid, suscipit unde quas accusamus quod nostrum error nisi eaque pariatur impedit nihil sint voluptatem.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit repellendus sequi
+                                    earum? Ratione, necessitatibus voluptas aliquid, suscipit unde quas accusamus quod
+                                    nostrum error nisi eaque pariatur impedit nihil sint voluptatem.</p>
                                 <a class="btn btn-primary" href="#">Learn More</a>
                             </div>
                             <div class="col-6">
                                 <h4>Photography</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit repellendus sequi earum? Ratione, necessitatibus voluptas aliquid, suscipit unde quas accusamus quod nostrum error nisi eaque pariatur impedit nihil sint voluptatem.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit repellendus sequi
+                                    earum? Ratione, necessitatibus voluptas aliquid, suscipit unde quas accusamus quod
+                                    nostrum error nisi eaque pariatur impedit nihil sint voluptatem.</p>
                                 <a class="btn btn-primary" href="#">Learn More</a>
                             </div>
                         </div>
@@ -112,11 +108,11 @@
         </section>
 
         <!-- projects -->
-         <section>
+        <section>
             <div class="container  py-5 ">
                 <h2 class="text-center border-bottom">Projects</h2>
             </div>
-         </section>
+        </section>
 
     </main>
     <footer>
