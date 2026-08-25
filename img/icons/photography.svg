@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="photo_2" data-name="photo 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="-147.49" cy="-148.29" fx="-147.49" fy="-148.29" r="421.12" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ccbcff"/>
+      <stop offset="1" stop-color="#ff76ff"/>
+    </radialGradient>
+  </defs>
+  <rect class="cls-1" x="10.9" y="10.9" width="138.2" height="138.2" rx="12" ry="12"/>
+  <g>
+    <path d="M78.79,24.81c-19.62.42-36.72,11.07-46.17,26.83l30.75,30.75,15.43-57.58Z"/>
+    <path d="M127.22,51.35c-9.55-15.7-26.71-26.25-46.36-26.55l-11.25,41.98,57.61-15.44Z"/>
+    <path d="M128.42,106.56c4.33-7.88,6.8-16.93,6.8-26.56s-2.54-18.91-6.97-26.86l-42,11.25,42.17,42.17Z"/>
+    <path d="M31.58,53.44c-4.33,7.88-6.8,16.93-6.8,26.56s2.54,18.91,6.97,26.86l42-11.25L31.58,53.44Z"/>
+    <path d="M81.21,135.19c19.62-.42,36.72-11.07,46.17-26.83l-30.75-30.75-15.43,57.58Z"/>
+    <path d="M32.78,108.65c9.55,15.7,26.71,26.25,46.36,26.55l11.25-41.98-57.61,15.44Z"/>
+  </g>
+</svg>
