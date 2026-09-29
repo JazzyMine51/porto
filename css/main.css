@@ -97,7 +97,6 @@ div > h1 {
     }
 
     nav li:last-of-type {
-        margin-left: auto;
         width: auto;
     }
 }
