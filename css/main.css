@@ -117,6 +117,29 @@ div > h1 {
     font-size: clamp(1em, 2vw, 2em);
 }
 
+/* Project cards section */
+.card {
+    box-sizing: border-box;
+    border: #23212c dashed 4px;
+    transition: border-color 0.2s;
+}
+.card:hover, a:focus .card {
+    border-color: #871328;
+}
+
+.card-title {
+    font-family: var(--serif-font);
+    font-weight: 900;
+    color: #871328;
+    padding-bottom: 1em;
+    font-size: clamp(1em, 2vw, 1.3em);
+
+}
+a {
+    /* remove the link stuff */
+    text-decoration: none;
+}
+
 /* tablet style */
 @media (min-width: 768px) {
 
