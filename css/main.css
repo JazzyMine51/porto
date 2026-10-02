@@ -18,7 +18,8 @@
     --bs-nav-link-font-size: 1.2em;
 
     --serif-font: "Space Mono", monospace;
-    --sans-serif-font: "Space Mono", monospace;
+    --sans-serif-font: "Roboto Mono", monospace;
+    --bs-body-font-family: var(--sans-serif-font);
 
 
     /* font sizes */
