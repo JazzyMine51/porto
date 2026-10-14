@@ -59,8 +59,8 @@ nav {
     border-bottom: #23212c 2px dotted;
 }
 
-/* nav item spacing */
-nav li:first-of-type, nav li:last-of-type {
+/* main nav item spacing */
+nav[aria-label="Main Navigation"] li:first-of-type, nav[aria-label="Main Navigation"] li:last-of-type {
     width: 100%;
     text-align: center;
 }
@@ -154,12 +154,12 @@ a {
     
 
     /* nav item spacing */
-    nav li:first-of-type {
+    nav[aria-label="Main Navigation"] li:first-of-type {
         margin-right: auto;
         width: auto;
     }
 
-    nav li:last-of-type {
+    nav[aria-label="Main Navigation"] li:last-of-type {
         width: auto;
     }
 }
