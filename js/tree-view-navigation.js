@@ -67,6 +67,7 @@ class TreeViewNavigation {
       if (groupNode) {
         var span = ti.querySelector('span.icon');
         span.addEventListener('click', this.onIconClick.bind(this));
+        ti.addEventListener('click', this.onFolderClick.bind(this));
       }
     }
 
@@ -369,6 +370,19 @@ class TreeViewNavigation {
       this.collapseTreeitem(tgt.parentNode.parentNode);
     } else {
       this.expandTreeitem(tgt.parentNode.parentNode);
+    }
+
+    event.preventDefault();
+    event.stopPropagation();
+  }
+
+  onFolderClick(event) {
+    var tgt = event.currentTarget;
+
+    if (this.isExpanded(tgt)) {
+      this.collapseTreeitem(tgt);
+    } else {
+      this.expandTreeitem(tgt);
     }
 
     event.preventDefault();
