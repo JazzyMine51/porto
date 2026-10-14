@@ -13,6 +13,9 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
 
+    <!-- Modified WCAG tree view pattern -->
+     <link rel="stylesheet" href="./css/tree-view-navigation.css">
+
     <!-- bs -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -26,7 +29,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand">
+        <nav class="navbar navbar-expand" aria-label="Main Navigation">
             <div class="container">
                 <div class="navbar w-100" id="navbarNav">
                     <ul class="navbar-nav d-flex flex-wrap justify-content-center align-items-center w-100">
@@ -46,7 +49,7 @@
                             <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-primary">Contact</a>
+                            <a class="btn btn-primary" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +63,8 @@
                 <div class="row flex-lg align-items-center justify-content-center pt-md-5 pt-4">
                     <div class="col-12 col-lg-6">
                         <!-- animation paragraphs, animation name is in the innerHTML -->
-                        <p class="animate" aria-label="ASCII animation of a penguin walking into frame and then waving at the camera, he keeps waving forever">penguin</p>
+                        <p class="animate"
+                            aria-label="ASCII animation of a penguin walking into frame and then waving at the camera, he keeps waving forever">penguin</p>
                     </div>
                     <div class="col-lg-6 border border-5 border-primary rounded-5">
                         <h1 class="fw-bold text-body-emphasis text-center">
@@ -92,98 +96,227 @@
         <!-- projects -->
         <section>
             <div class="container py-3 ">
-                <div class="row flex-lg py-3 g-3">
-                    <h2 class="col-12">>My_Projects</h2>
-
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <a href="">
-                            <div class="card">
-                                <img src="./img/sketch.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-title">My Penguin Animation</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <a href="">
-                            <div class="card">
-                                <img src="./img/sketch.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-title">My Penguin Animation</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <a href="">
-                            <div class="card">
-                                <img src="./img/sketch.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-title">My Penguin Animation</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <a href="">
-                            <div class="card">
-                                <img src="./img/sketch.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-title">My Penguin Animation</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <a href="">
-                            <div class="card">
-                                <img src="./img/sketch.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-title">My Penguin Animation</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <a href="">
-                            <div class="card">
-                                <img src="./img/sketch.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-title">My Penguin Animation</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <a href="">
-                            <div class="card">
-                                <img src="./img/sketch.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-title">My Penguin Animation</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <a href="">
-                            <div class="card">
-                                <img src="./img/sketch.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-title">My Penguin Animation</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
+                <h2>>My_Projects</h2>
+                <nav aria-label="Project Navigation">
+                    <ul class="treeview-navigation" role="tree" aria-label="Mythical University">
+                        <li role="none">
+                            <a role="treeitem" href="#" aria-current="page">
+                                <span class="label">home</span>
+                            </a>
+                        </li>
+                        <li role="none">
+                            <a role="treeitem" aria-expanded="false" aria-owns="id-web-subtree" href="#web">
+                                <span class="label">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10"
+                                            viewBox="0 0 13 10">
+                                            <polygon points="2 1, 12 1, 7 9"></polygon>
+                                        </svg>
+                                    </span>
+                                    web
+                                </span>
+                            </a>
+                            <ul id="id-web-subtree" role="group" aria-label="web">
+                                <li role="none">
+                                    <a role="treeitem" href="#portfolio">
+                                        <span class="label">portfolio.txt</span>
+                                    </a>
+                                </li>
+                                <li role="none">
+                                    <a role="treeitem" href="#adminstration">
+                                        <span class="label">pet_shelter.txt</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="none">
+                            <a role="treeitem" aria-expanded="false" aria-owns="id-art-subtree"
+                                href="#art">
+                                <span class="label">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10"
+                                            viewBox="0 0 13 10">
+                                            <polygon points="2 1, 12 1, 7 9"></polygon>
+                                        </svg>
+                                    </span>
+                                    art
+                                </span>
+                            </a>
+                            <ul id="id-art-subtree" role="group" aria-label="art">
+                                <li role="none">
+                                    <a role="treeitem" aria-expanded="false" aria-owns="id-vector-subtree"
+                                        href="#vector">
+                                        <span class="label">
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10"
+                                                    viewBox="0 0 13 10">
+                                                    <polygon points="2 1, 12 1, 7 9"></polygon>
+                                                </svg>
+                                            </span>
+                                            vector
+                                        </span>
+                                    </a>
+                                    <ul id="id-vector-subtree" role="group" aria-label="vector">
+                                        <li role="none">
+                                            <a role="treeitem" href="#undergraduate">
+                                                <span class="label">Undergraduate</span>
+                                            </a>
+                                        </li>
+                                        <li role="none">
+                                            <a role="treeitem" href="#graduate">
+                                                <span class="label">Graduate</span>
+                                            </a>
+                                        </li>
+                                        <li role="none">
+                                            <a role="treeitem" href="#professional-schools">
+                                                <span class="label">Professional Schools</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li role="none">
+                                    <a role="treeitem" aria-expanded="false" aria-owns="id-drawing-subtree"
+                                        href="#drawing">
+                                        <span class="label">
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10"
+                                                    viewBox="0 0 13 10">
+                                                    <polygon points="2 1, 12 1, 7 9"></polygon>
+                                                </svg>
+                                            </span>
+                                            drawing
+                                        </span>
+                                    </a>
+                                    <ul id="id-drawing-subtree" role="group" aria-label="drawing">
+                                        <li role="none">
+                                            <a role="treeitem" href="#undergraduate">
+                                                <span class="label">Undergraduate</span>
+                                            </a>
+                                        </li>
+                                        <li role="none">
+                                            <a role="treeitem" href="#graduate">
+                                                <span class="label">Graduate</span>
+                                            </a>
+                                        </li>
+                                        <li role="none">
+                                            <a role="treeitem" href="#professional-schools">
+                                                <span class="label">Professional Schools</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="none">
+                            <a role="treeitem" aria-expanded="false" aria-owns="id-photos-subtree" href="#photos">
+                                <span class="label">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10"
+                                            viewBox="0 0 13 10">
+                                            <polygon points="2 1, 12 1, 7 9"></polygon>
+                                        </svg>
+                                    </span>
+                                    photos
+                                </span>
+                            </a>
+                            <ul id="id-photos-subtree" role="group" aria-label="photos">
+                                <li role="none">
+                                    <a role="treeitem" aria-expanded="false" aria-owns="id-nature-subtree"
+                                        href="#nature">
+                                        <span class="label">
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10"
+                                                    viewBox="0 0 13 10">
+                                                    <polygon points="2 1, 12 1, 7 9"></polygon>
+                                                </svg>
+                                            </span>
+                                            nature
+                                        </span>
+                                    </a>
+                                    <ul id="id-nature-subtree" role="group" aria-label="nature">
+                                        <li role="none">
+                                            <a role="treeitem" href="#undergraduate">
+                                                <span class="label">Undergraduate</span>
+                                            </a>
+                                        </li>
+                                        <li role="none">
+                                            <a role="treeitem" href="#graduate">
+                                                <span class="label">Graduate</span>
+                                            </a>
+                                        </li>
+                                        <li role="none">
+                                            <a role="treeitem" href="#professional-schools">
+                                                <span class="label">Professional Schools</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li role="none">
+                                    <a role="treeitem" aria-expanded="false" aria-owns="id-wildlife-subtree"
+                                        href="#wildlife">
+                                        <span class="label">
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10"
+                                                    viewBox="0 0 13 10">
+                                                    <polygon points="2 1, 12 1, 7 9"></polygon>
+                                                </svg>
+                                            </span>
+                                            wildlife
+                                        </span>
+                                    </a>
+                                    <ul id="id-wildlife-subtree" role="group" aria-label="wildlife">
+                                        <li role="none">
+                                            <a role="treeitem" href="#undergraduate">
+                                                <span class="label">Undergraduate</span>
+                                            </a>
+                                        </li>
+                                        <li role="none">
+                                            <a role="treeitem" href="#graduate">
+                                                <span class="label">Graduate</span>
+                                            </a>
+                                        </li>
+                                        <li role="none">
+                                            <a role="treeitem" href="#professional-schools">
+                                                <span class="label">Professional Schools</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li role="none">
+                                    <a role="treeitem" aria-expanded="false" aria-owns="id-pets-subtree"
+                                        href="#pets">
+                                        <span class="label">
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10"
+                                                    viewBox="0 0 13 10">
+                                                    <polygon points="2 1, 12 1, 7 9"></polygon>
+                                                </svg>
+                                            </span>
+                                            pets
+                                        </span>
+                                    </a>
+                                    <ul id="id-pets-subtree" role="group" aria-label="pets">
+                                        <li role="none">
+                                            <a role="treeitem" href="#undergraduate">
+                                                <span class="label">Undergraduate</span>
+                                            </a>
+                                        </li>
+                                        <li role="none">
+                                            <a role="treeitem" href="#graduate">
+                                                <span class="label">Graduate</span>
+                                            </a>
+                                        </li>
+                                        <li role="none">
+                                            <a role="treeitem" href="#professional-schools">
+                                                <span class="label">Professional Schools</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </section>
     </main>
@@ -197,6 +330,7 @@
                     © 2026 Jasmine Bélanger
                 </div>
                 <div class="col-auto">
+                    <a href="./licenses.html">Third-Party Licenses</a>
                     <a target="_blank" href="https://github.com/JazzyMine51">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" class="bi bi-github" viewBox="0 0 16 16">
                             <path
@@ -207,10 +341,18 @@
             </div>
         </div>
     </footer>
+    <!-- modified WCAG tree view code -->
+    <script src="./js/tree-view-navigation.js"></script>
+
+    <!-- ASCII animation -->
     <script type="module" src="./js/render.js"></script>
+
+    <!-- BS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <!-- animate on scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
