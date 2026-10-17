@@ -1,7 +1,12 @@
+.treeview-navigation {
+  font-size: 1.2em;
+}
+
 .treeview-navigation ul,
 .treeview-navigation li {
   margin: 0;
   padding: 0;
+  padding-left: 4em;
 }
 
 .treeview-navigation li li span.label {
@@ -52,13 +57,13 @@
   padding: 4px;
   padding-left: 9px;
   text-decoration: none;
-  color: #005a9c;
+  color: #871328;
   border: none;
   display: block;
 }
 
 .treeview-navigation a[role="treeitem"][aria-current] {
-  border-left: 5px solid #005a9c;
+  border-left: 5px solid #871328;
   padding-left: 4px;
   background-color: #ddd;
 }
@@ -76,7 +81,7 @@
   outline: 0;
   padding: 2px;
   padding-left: 7px;
-  border: 2px #005a9c solid;
+  border: 2px #871328 solid;
 }
 
 .treeview-navigation a[role="treeitem"][aria-current]:focus {
@@ -85,7 +90,8 @@
 }
 
 .treeview-navigation a[role="treeitem"]:hover {
-  background-color: #adddff;
+  background-color: #871328;
+  color: #FAF6CE;
   text-decoration: underline;
   padding-left: 4px;
   border-left: 5px solid #333;
