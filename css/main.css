@@ -45,13 +45,23 @@
 }
 
 /* class to only show content to screen readers */
-.sr-only {
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
+.sr-only,
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* skip link visible when in focus */
+.skip:focus {
+    color: var(--bs-link-color);
+    font-size: 2em;
+    position: static;
+    width: auto;
+    height: auto;
 }
 
 nav .btn {
@@ -65,17 +75,22 @@ nav {
     /* border-bottom: #23212c 1px solid; */
 }
 
-.nav-link{
+.nav-link {
     border-bottom: #23212c 2px dotted;
 }
 
 /* main nav item spacing */
-nav[aria-label="Main Navigation"] li:first-of-type, nav[aria-label="Main Navigation"] li:last-of-type {
+nav[aria-label="Main Navigation"] li:first-of-type,
+nav[aria-label="Main Navigation"] li:last-of-type {
     width: 100%;
     text-align: center;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: var(--serif-font);
     font-weight: 900;
     color: #871328;
@@ -104,7 +119,7 @@ h5 {
     font-size: clamp(1em, 2vw, 2em);
 }
 
-div > h1 {
+div>h1 {
     border: #23212c dashed 5px;
 }
 
@@ -133,7 +148,9 @@ div > h1 {
     border: #23212c dashed 4px;
     transition: border-color 0.2s;
 }
-.card:hover, a:focus .card {
+
+.card:hover,
+a:focus .card {
     border-color: #871328;
 }
 
@@ -145,6 +162,7 @@ div > h1 {
     font-size: clamp(1em, 2vw, 1.3em);
 
 }
+
 a {
     /* remove the link stuff */
     text-decoration: none;
@@ -161,7 +179,7 @@ a {
 
 /* desktop style */
 @media (min-width: 1200px) {
-    
+
 
     /* nav item spacing */
     nav[aria-label="Main Navigation"] li:first-of-type {
