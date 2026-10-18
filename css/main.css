@@ -44,6 +44,16 @@
     --bs-btn-active-border-color: #2e2c3a;
 }
 
+/* class to only show content to screen readers */
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
 nav .btn {
     --bs-btn-font-size: 1.2em;
 }
