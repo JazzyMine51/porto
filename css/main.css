@@ -142,13 +142,6 @@ div>h1 {
     font-size: clamp(1em, 2vw, 2em);
 }
 
-/* Project cards section */
-.card {
-    box-sizing: border-box;
-    border: #23212c dashed 4px;
-    transition: border-color 0.2s;
-}
-
 .card:hover,
 a:focus .card {
     border-color: #871328;
@@ -166,6 +159,15 @@ a:focus .card {
 a {
     /* remove the link stuff */
     text-decoration: none;
+}
+
+footer svg {
+    fill: #373A4A;
+    transition: fill 0.2s;
+}
+
+footer svg:hover {
+    fill: #871328;
 }
 
 /* tablet style */
@@ -190,8 +192,4 @@ a {
     nav[aria-label="Main Navigation"] li:last-of-type {
         width: auto;
     }
-}
-
-footer svg {
-    fill: #373A4A;
 }
