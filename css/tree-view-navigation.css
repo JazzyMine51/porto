@@ -81,7 +81,7 @@
   outline: 0;
   padding: 2px;
   padding-left: 7px;
-  border: 2px #871328 solid;
+  border: 5px #871328 solid;
 }
 
 .treeview-navigation a[role="treeitem"][aria-current]:focus {

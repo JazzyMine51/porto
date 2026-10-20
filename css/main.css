@@ -5,6 +5,7 @@
     --bs-body-bg: #FAF6CE;
     --bs-link-color: #871328;
     --bs-link-color-rgb: 201, 93, 201;
+    --bs-border-color: #000000;
 
     --bs-emphasis-color: #871328;
 
@@ -12,8 +13,6 @@
     --bs-link-hover-color: #612a61;
     --bs-secondary: #FAF6CE;
     --bs-secondary-rgb: 250, 246, 206;
-
-    --bs-border-radius: 0rem;
 
     --bs-nav-link-font-size: 1.2em;
 
@@ -57,6 +56,8 @@
 
 /* skip link visible when in focus */
 .skip:focus {
+    outline: none;
+    text-decoration: underline;
     color: var(--bs-link-color);
     font-size: 2em;
     position: static;
@@ -75,15 +76,35 @@ nav {
     /* border-bottom: #23212c 1px solid; */
 }
 
-.nav-link {
-    border-bottom: #23212c 2px dotted;
+nav[aria-label="Main Navigation"] li:first-of-type {
+    margin-right: auto;
+    width: auto;
 }
 
-/* main nav item spacing */
-nav[aria-label="Main Navigation"] li:first-of-type,
 nav[aria-label="Main Navigation"] li:last-of-type {
-    width: 100%;
-    text-align: center;
+    width: auto;
+}
+
+.nav {
+    --bs-nav-link-padding-x: clamp(0.2rem, 2vw, 1.8rem);
+}
+
+.nav-tabs .nav-link {  
+    border-color: #000;
+}
+
+.nav-tabs {
+    --bs-nav-tabs-link-hover-border-color: #871328 #871328 #871328;
+}
+
+.nav-tabs a:focus,.nav-tabs a:hover, .nav-link.active:focus, .nav-link.active:hover {
+    text-decoration: underline;
+    background-color: #871328;
+    color: #FAF6CE;
+}
+
+.nav-item a:focus-visible {
+    box-shadow: none;
 }
 
 h1,
@@ -161,6 +182,18 @@ a {
     text-decoration: none;
 }
 
+/* nav[aria-label="Project Navigation"]{
+    box-shadow: inset 0 0 0 4px  #871328 ;
+} */
+
+nav[aria-label="Project Navigation"]:has(a:focus){
+    box-shadow: inset 0 0 0 1px  #000000 ;
+}
+
+footer {
+    border-top: #000000 solid 1px;
+}
+
 footer svg {
     fill: #373A4A;
     transition: fill 0.2s;
@@ -173,23 +206,9 @@ footer svg:hover {
 /* tablet style */
 @media (min-width: 768px) {
 
-    /* nav item spacing */
-    .nav-link {
-        margin: 0 1em 0 1em;
-    }
 }
 
 /* desktop style */
 @media (min-width: 1200px) {
 
-
-    /* nav item spacing */
-    nav[aria-label="Main Navigation"] li:first-of-type {
-        margin-right: auto;
-        width: auto;
-    }
-
-    nav[aria-label="Main Navigation"] li:last-of-type {
-        width: auto;
-    }
 }
