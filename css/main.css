@@ -1,18 +1,30 @@
 :root {
+    --primary-rgb: 250, 246, 206;
+    --primary-hex: #FAF6CE;
 
-    --bs-primary-rgb: 250, 246, 206;
+    --secondary-rgb: 135, 19, 40;
+    --secondary-hex: #871328;
 
-    --bs-body-bg: #FAF6CE;
-    --bs-link-color: #871328;
-    --bs-link-color-rgb: 201, 93, 201;
-    --bs-border-color: #000000;
+    /* --tertiary-rgb:; */
+    /* --tertiary-hex:; */
 
-    --bs-emphasis-color: #871328;
+    --text-color-rbg: 0, 0, 0;
+    --text-color-hex: #000;
 
-    --bs-emphasis-color-rgb: 135, 19, 40;
+    --bs-border-color: #000;
+
+    --bs-primary-rgb: var(--primary-rgb);
+    --bs-body-bg: var(--primary-hex);
+
+    --bs-link-color: var(--secondary-hex);
+    --bs-link-color-rgb: var(--secondary-hex);
     --bs-link-hover-color: #612a61;
-    --bs-secondary: #FAF6CE;
-    --bs-secondary-rgb: 250, 246, 206;
+
+    --bs-emphasis-color: var(--secondary-hex);
+    --bs-emphasis-color-rgb: var(--primary-rgb);
+
+    --bs-secondary: var(--primary-hex);
+    --bs-secondary-rgb: var(--primary-rgb);
 
     --bs-nav-link-font-size: 1.2em;
 
@@ -94,13 +106,13 @@ nav[aria-label="Main Navigation"] li:last-of-type {
 }
 
 .nav-tabs {
-    --bs-nav-tabs-link-hover-border-color: #871328 #871328 #871328;
+    --bs-nav-tabs-link-hover-border-color: var(--secondary-hex);
 }
 
 .nav-tabs a:focus,.nav-tabs a:hover, .nav-link.active:focus, .nav-link.active:hover {
     text-decoration: underline;
-    background-color: #871328;
-    color: #FAF6CE;
+    background-color: var(--secondary-hex);
+    color: var(--primary-hex);
 }
 
 .nav-item a:focus-visible {
@@ -114,7 +126,7 @@ h4,
 h5 {
     font-family: var(--serif-font);
     font-weight: 900;
-    color: #871328;
+    color: var(--primary-hex);
     padding-bottom: 1em;
 }
 
@@ -146,7 +158,7 @@ div>h1 {
 
 .animate {
     white-space: pre-wrap;
-    color: #000000;
+    color: var(--text-color-hex);
     font-family: "Roboto Mono", monospace;
     font-weight: 900;
     text-align: center;
@@ -158,20 +170,20 @@ div>h1 {
 .story-number {
     font-family: var(--serif-font);
     font-weight: 900;
-    color: #871328;
+    color: var(--secondary-hex);
     padding: 1em;
     font-size: clamp(1em, 2vw, 2em);
 }
 
 .card:hover,
 a:focus .card {
-    border-color: #871328;
+    border-color: var(--secondary-hex);
 }
 
 .card-title {
     font-family: var(--serif-font);
     font-weight: 900;
-    color: #871328;
+    color: var(--secondary-hex);
     padding-bottom: 1em;
     font-size: clamp(1em, 2vw, 1.3em);
 
@@ -191,7 +203,7 @@ nav[aria-label="Project Navigation"]:has(a:focus){
 }
 
 footer {
-    border-top: #000000 solid 1px;
+    border-top: var(--bs-border-color) solid 1px;
 }
 
 footer svg {
@@ -200,7 +212,7 @@ footer svg {
 }
 
 footer svg:hover {
-    fill: #871328;
+    fill: var(--secondary-hex);
 }
 
 /* tablet style */
