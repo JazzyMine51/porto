@@ -102,7 +102,7 @@ nav[aria-label="Main Navigation"] li:last-of-type {
 }
 
 .nav-tabs .nav-link {  
-    border-color: var(--secondary-hex);
+    border-color: #000;
 }
 
 .nav-tabs {
@@ -153,7 +153,7 @@ h5 {
 }
 
 div>h1 {
-    border: var(--secondary-hex) dashed 5px;
+    border: #23212c dashed 5px;
 }
 
 .animate {
