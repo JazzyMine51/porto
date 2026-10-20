@@ -1,17 +1,17 @@
 :root {
     --primary-rgb: 250, 246, 206;
-    --primary-hex: #FAF6CE;
+    --primary-hex: #15557F;
 
     --secondary-rgb: 135, 19, 40;
-    --secondary-hex: #871328;
+    --secondary-hex: #E2E2E2;
 
     /* --tertiary-rgb:; */
     /* --tertiary-hex:; */
 
     --text-color-rbg: 0, 0, 0;
-    --text-color-hex: #000;
+    --text-color-hex: #E2E2E2;
 
-    --bs-border-color: #000;
+    --bs-border-color: #E2E2E2;
 
     --bs-primary-rgb: var(--primary-rgb);
     --bs-body-bg: var(--primary-hex);
@@ -102,7 +102,7 @@ nav[aria-label="Main Navigation"] li:last-of-type {
 }
 
 .nav-tabs .nav-link {  
-    border-color: #000;
+    border-color: var(--secondary-hex);
 }
 
 .nav-tabs {
@@ -153,7 +153,7 @@ h5 {
 }
 
 div>h1 {
-    border: #23212c dashed 5px;
+    border: var(--secondary-hex) dashed 5px;
 }
 
 .animate {
