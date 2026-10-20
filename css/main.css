@@ -1,17 +1,17 @@
 :root {
     --primary-rgb: 250, 246, 206;
-    --primary-hex: #15557F;
+    --primary-hex: #FAF6CE;
 
     --secondary-rgb: 135, 19, 40;
-    --secondary-hex: #E2E2E2;
+    --secondary-hex: #871328;
 
     /* --tertiary-rgb:; */
     /* --tertiary-hex:; */
 
     --text-color-rbg: 0, 0, 0;
-    --text-color-hex: #E2E2E2;
+    --text-color-hex: #000;
 
-    --bs-border-color: #E2E2E2;
+    --bs-border-color: #000;
 
     --bs-primary-rgb: var(--primary-rgb);
     --bs-body-bg: var(--primary-hex);
