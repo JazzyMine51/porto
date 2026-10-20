@@ -126,7 +126,7 @@ h4,
 h5 {
     font-family: var(--serif-font);
     font-weight: 900;
-    color: var(--primary-hex);
+    color: var(--secondary-hex);
     padding-bottom: 1em;
 }
 
